@@ -1,0 +1,26 @@
+.about-me {
+    min-height: calc(100vh - 71px);
+    background-color: #0f171f;
+    color: #5DD39E;
+}
+
+.about-me-info {
+    max-width: 50%;
+}
+.about-me-info h2 {
+    font-size: 45px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+.about-me-info p {
+    font-size: 20px;
+}
+
+.about-me-info button {
+    background-color: #9DACFF;
+    color: #0f171f;
+    padding: 10px 30px 10px 30px;
+    border-radius: 12px;
+    border-style: none;
+}

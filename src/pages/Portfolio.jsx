@@ -1,33 +1,46 @@
 /* eslint-disable react/prop-types */
 import '../assets/css/Portfolio.css'
+import movieFinderImage from '../assets/images/MFscreenshot1.png'
+import weatherImage from '../assets/images/weatherDashBoardSS.png'
+import crud from '../assets/images/crud.png'
+import { Link } from 'react-router-dom';
+
 
 const projectData =[
     {
-        image: 'https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*',
-        title: 'testTitle1',
-        description: 'Description test 1',
-        tech: ['Testing','html', 'css', 'javascript'],
-        github: 'linkgoeshere',
-        liveLink: 'livelinkgoeshere'
+        image: crud,
+        title: 'social network api',
+        description: 'So this is the back end for a social network api and it consit of users and there thoughts. With thoughts other users can make reaction to there thoughts aswell. A user can also add friends of other user to there friends list. It\'s the basic CRUD using mongoose DB.',
+        tech: ['Postman Testing', 'Mongoose', 'CRUD', 'js'],
+        github: 'https://github.com/Giovanni-Ramirez/social-network-api',
+        liveLink: 'n/a'
     },
     {
-        image: 'https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*',
-        title: 'testTitle2',
-        description: 'Description test 2',
-        tech: ['html', 'react', 'html', 'css'],
-        github: 'linkgoeshere',
-        liveLink: 'livelinkgoeshere'
+        image: movieFinderImage,
+        title: 'Movie Finder',
+        description: 'This was my first group project. So we made a movie finder website where you would be able to see the most recent movies. You could also search for movies and add them to a list and get rid of them when ever you watch that movie!',
+        tech: ['Bootstrap','jquery', 'Youtub api', 'TMDB api'],
+        github: 'https://github.com/akosla00/MovieFinder',
+        liveLink: 'https://akosla00.github.io/MovieFinder/index.html'
+    },
+    {
+        image: weatherImage,
+        title: 'Weather Dash Board',
+        description: 'This project use a Weather Api to give you the weather. You can search by City and it would save your past search and can be view by clicking that button. The back ground would dynamically change based on the weather.',
+        tech: ['Weather Api', 'html', 'css', 'js'],
+        github: 'https://github.com/Giovanni-Ramirez/weatherDashBoard',
+        liveLink: 'https://giovanni-ramirez.github.io/weatherDashBoard/'
     },
 ]
 
-const Project = ({image, title, description, tech}) => (
+const Project = ({image, title, description, tech, github, liveLink}) => (
     <div className="project row mb-4">
-        <div className="col-sm-4 image-container">
+        <div className="col-sm-5 image-container">
             <img src={image} alt="" />
         </div>
-        <div className="text-container col-sm-8 row">
+        <div className="text-container col-sm-7 row">
             <div className="col">
-                <h5>Technology</h5>
+                <h5>Main Points</h5>
                 <ul>
                     <li>{tech[0]}</li>
                     <li>{tech[1]}</li>
@@ -39,8 +52,8 @@ const Project = ({image, title, description, tech}) => (
                 <h5>{title}</h5>
                 <p>{description}</p>
                 <div>
-                    <a href=""><button>live link</button></a>
-                    <a href=""><button>github</button></a>
+                    <a href={liveLink} target='_blank'><button className='porfolioButton'>live link</button></a>
+                    <a href={github} target='_blank'><button className='porfolioButton'>github</button></a>
                 </div>
             </div>
         </div>
@@ -55,9 +68,14 @@ function Portfolio () {
         <section className="container">
             <div>
                 {projectData.map(project => (
-                    <Project key={project.index} image={project.image} title={project.title} description={project.description} tech={project.tech}/>
+                    <Project key={project.index} image={project.image} title={project.title} description={project.description} tech={project.tech} github={project.github} liveLink={project.liveLink}/>
                 ))}
             </div>
+        <div className='d-flex justify-content-center'>
+            <Link to='/Contact' id='contact-link'>
+                    contact
+            </Link> 
+        </div>
         </section>
         </>
     )

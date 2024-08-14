@@ -1,0 +1,15 @@
+.footer-div {
+    border-top: 2px solid #5DD39E;
+
+}
+
+#github-image {
+    color: red;
+}
+
+#github-circle {
+    border-radius: 50px;
+    background-color: #5DD39E;
+    padding: 2px;
+    margin: 20px;
+}

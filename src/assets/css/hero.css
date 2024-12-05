@@ -1,8 +1,9 @@
 .hero {
     min-height: calc(100vh - 71px);
-    background-color: #0f171f;
-    color: #5DD39E;
+    background-color: var(--off-white);
+    color: var(--black);
 }
+
 
 .info h1 {
     font-size: 70px;
@@ -15,8 +16,8 @@
 }
 
 .info button {
-    background-color: #9DACFF;
-    color: #0f171f;
+    background-color: var(--second-color);
+    color: var(--white);
     padding: 10px 30px 10px 30px;
     border-radius: 12px;
     border-style: none;
@@ -42,4 +43,8 @@
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+
+.high-light {
+    color: var(--second-color);
 }

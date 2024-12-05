@@ -42,10 +42,10 @@ const Project = ({image, title, description, tech, github, liveLink}) => (
             <div className="col">
                 <h5>Main Points</h5>
                 <ul>
-                    <li>{tech[0]}</li>
-                    <li>{tech[1]}</li>
-                    <li>{tech[2]}</li>
-                    <li>{tech[3]}</li>
+                    <span className='main-points'><li>{tech[0]}</li></span>
+                    <span className='main-points'><li>{tech[1]}</li></span>
+                    <span className='main-points'><li>{tech[2]}</li></span>
+                    <span className='main-points'><li>{tech[3]}</li></span>
                 </ul>
             </div>
             <div className="col-8">

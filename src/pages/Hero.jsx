@@ -6,7 +6,7 @@ function Hero () {
     return (
         <div className="hero d-flex justify-content-center align-items-center flex-wrap justify-content-evenly p-4">
             <div className='info'>
-              <h1>I&apos;m Giovanni a <br />Web Developer</h1>
+              <h1>I&apos;m <span className='high-light'>Giovanni</span> a <br />Full Stack <span className='high-light'>Developer</span></h1>
             <p>I&apos;m a fullstack web developer. I create great looking<br /> and functioning website for you and your audience.</p>
                 <Link to='/About' className="nav-link">
                     <button>

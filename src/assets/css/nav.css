@@ -1,9 +1,13 @@
 .navbar {
-    background-color: #5DD39E !important;
+    background-color: var(--main-color) !important;
     font-family: "Roboto Slab", serif;
-    color: #0f171f;
+    color: var(--white);
 }
-.dot {
-    color: white;
-    font-size: 30px;
+
+.navbar-brand {
+    color: var(--white);
+}
+
+.nav-link {
+    color: var(--white);
 }

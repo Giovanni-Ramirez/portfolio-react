@@ -10,18 +10,18 @@
 }
 
 body {
-    background-color: #0f171f;
-    color: #5DD39E;
+    background-color: var(--off-white);
+    color: var(--main-color);
 }
 
 .title-page {
-    color: #5DD39E;
+    color: var(--main-color);
     margin: 30px;
 }
 
 .project {
-    background-color: #161f28;
-    color: #5DD39E;
+    background-color: var(--main-color);
+    color: var(--off-white);
     border-radius: 12px;
 }
 
@@ -30,8 +30,8 @@ body {
 }
 
 .porfolioButton {
-    background-color: #0f171f;
-    color: #5DD39E;
+    background-color: #1E2019;
+    color: var(--off-white);
     text-decoration: none;
     border: none;
     border-radius: 12px;
@@ -41,18 +41,22 @@ body {
 }
 
 .porfolioButton:hover {
-    box-shadow: 0 5px 5px 0 #5DD39E, 0 5px 5px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 5px 5px 0 var(--off-white), 0 5px 5px 0 rgba(0,0,0,0.19);
     -webkit-transform: translateY(-2px);
 	transform: translateY(-2px);
   }
 
 #contact-link {
-    background-color: #9DACFF;
-    color: #0f171f;
+    background-color: var(--main-color);
+    color: var(--white);
     padding: 10px 30px 10px 30px;
     border-radius: 12px;
     border-style: none;
     font-size: 20px;
     text-decoration: none;
     margin: 20px;
+}
+
+.main-points {
+    color: var(--white);
 }

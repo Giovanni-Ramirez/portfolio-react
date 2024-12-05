@@ -1,7 +1,7 @@
 .about-me {
     min-height: calc(100vh - 71px);
-    background-color: #0f171f;
-    color: #5DD39E;
+    background-color: var(--off-white);
+    color: var(--black);
 }
 
 .about-me-info {
@@ -18,8 +18,8 @@
 }
 
 .about-me-info button {
-    background-color: #9DACFF;
-    color: #0f171f;
+    background-color: var(--main-color);
+    color: var(--off-white);
     padding: 10px 30px 10px 30px;
     border-radius: 12px;
     border-style: none;

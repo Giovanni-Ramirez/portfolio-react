@@ -1,5 +1,5 @@
 .footer-div {
-    border-top: 2px solid #5DD39E;
+    border-top: 2px solid var(--main-color);
 
 }
 
@@ -9,7 +9,7 @@
 
 #github-circle {
     border-radius: 50px;
-    background-color: #5DD39E;
+    background-color: var(--main-color);
     padding: 2px;
     margin: 20px;
 }
